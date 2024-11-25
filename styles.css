@@ -1,0 +1,137 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1e1e1e;
+    color: #cfcfcf;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    color: #4e9eff;
+    font-size: 32px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.signals, .forex-pairs {
+    flex: 1;
+    background-color: #2c2c2c;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.signals h2, .forex-pairs h2 {
+    color: #4e9eff;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.signal-card {
+    background: linear-gradient(135deg, #333, #444);
+    padding: 15px 20px;
+    margin: 10px 0;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.signal-card:hover {
+    transform: scale(1.02);
+}
+
+.signal-card .time {
+    font-size: 16px;
+    font-weight: bold;
+    color: #a3a3a3;
+}
+
+.signal-card .algo {
+    font-size: 16px;
+    font-weight: bold;
+    color: #a3a3a3;
+}
+
+.signal-card .pair {
+    font-size: 20px;
+    font-weight: bold;
+    color: #4e9eff;
+}
+
+.signal-card .entry,
+.signal-card .take-profit,
+.signal-card .stop-loss {
+    font-size: 16px;
+    color: #cfcfcf;
+}
+
+.signal-card .action {
+    font-size: 16px;
+    padding: 8px 16px;
+    border-radius: 20px;
+    color: #fff;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.signal-card .action.buy {
+    background-color: #10b981;
+}
+
+.signal-card .action.sell {
+    background-color: #ef4444;
+}
+
+.pair-price {
+    background-color: #333;
+    padding: 15px 20px;
+    margin: 10px 0;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #4e9eff;
+    text-align: center;
+}
+
+.bot-button {
+    background-color: #007bff; /* Blue color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.bot-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.bot-button.stop {
+    background-color: #dc3545; /* Red color for stop */
+}
+
+.bot-button.stop:hover {
+    background-color: #c82333; /* Darker red on hover */
+}
